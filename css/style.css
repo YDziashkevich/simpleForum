@@ -1,0 +1,106 @@
+@charset "utf-8";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#body {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	width:800px;
+	
+}
+#signIn{
+    width: 400px;
+}
+#logo{
+    width: 400px;
+}
+#reg{
+    margin-left: 15px;
+}
+#header{
+    width: 800px;
+    height: 20px;
+}
+
+/*
+h1 {
+    text-align: center;
+}
+form{
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    text-align: center;
+}
+p{
+	width: 800px;
+
+	font-weight: normal;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 1px;
+        vertical-align: bottom;
+}
+.text_{
+	width: 300px;
+	height: 30px;
+	font-size: 25px;
+	text-align: center;
+	outline: none;
+}
+.textC_{
+	width: 40px;
+	height: 30px;
+	font-size: 25px;
+	text-align: center;
+	outline: none;
+}
+.ok_button{
+	width: 50px;
+	height: 30px;
+	font-size: 25px;
+	text-align: center;
+}
+.textM_{
+	width: 400px;
+	height: 100px;
+	font-size: 20px;
+	text-align: justify;
+	margin-bottom: 10px;
+	outline: none;
+	vertical-align: top;
+}
+.captcha{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.captcha td{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 25px;
+    font-weight: bold;
+    vertical-align: middle;
+
+}
+/*
+#formC{
+	float: left;
+	text-align: center;
+	width: 800px;
+	padding-left: auto;
+	padding-right: auto;
+	padding-top: auto;
+	padding-bottom: auto;
+	font-size: 25px;
+}

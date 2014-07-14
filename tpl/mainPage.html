@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Simple Forum</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/bootstrap.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+<div id="body">
+    <table>
+        <!-- HEADER -->
+        <tr id="header"><td>  </td></tr>
+        <!-- AUTHORIZATION -->
+        <tr>
+            <td id="logo">  </td>
+
+            <td id="signIn"> <form class="form-horizontal" method="post">
+                <fieldset>
+                    <!-- Form Name -->
+                    <legend>Sign in</legend>
+                    <!-- LOGIN-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="login">Name:</label>
+                        <div class="col-md-4">
+                            <input id="login" name="login" type="text" class="form-control input-md">
+                        </div>
+                    </div>
+                    <!-- PASSWORD-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="password">Password:</label>
+                        <div class="col-md-4">
+                            <input id="password" name="password" type="password" class="form-control input-md">
+                        </div>
+                    </div>
+
+                    <!-- BUTTON Sign in-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="ok"></label>
+                        <div class="col-md-4">
+                            <input type="submit" id="ok" name="ok" value="OK" class="btn btn-success">
+                            <a href="" id="reg">registration</a>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form> </td>
+        </tr>
+        <!-- CONTENT -->
+        <tr><td> СПИСОК ТЕМ </td></tr>
+        <!-- PAGINATION -->
+        <tr><td> ПАГИНАТОР </td></tr>
+        <!-- FOOTER -->
+        <tr><td> ФУТЕР </td></tr>
+    </table>
+</div>
+
+</body>
+
+</html>
