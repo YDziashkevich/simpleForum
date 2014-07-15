@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Registration</title>
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="./css/style.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+
+<div id="registration">
+    <form class="form-horizontal" method="post">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Registration</legend>
+
+            <!-- EMAIL-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="email"></label>
+                <div class="col-md-5">
+                    <div class="input-group">
+                        <span class="input-group-addon">e-mail:</span>
+                        <input id="email" name="email" class="form-control" type="text" value="{{VALUEEMAIL}}">
+                    </div>
+                    <p class="help-block">{{ERROREMAIL}}</p>
+                </div>
+            </div>
+
+            <!-- LOGIN-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="login"></label>
+                <div class="col-md-5">
+                    <div class="input-group">
+                        <span class="input-group-addon">login:</span>
+                        <input id="login" name="login" class="form-control" type="text" value="{{VALUELOGIN}}">
+                    </div>
+                    <p class="help-block">{{ERRORLOGIN}}</p>
+                </div>
+            </div>
+
+            <!-- PASSWORD-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="password"></label>
+                <div class="col-md-5">
+                    <div class="input-group">
+                        <span class="input-group-addon">password:</span>
+                        <input id="password" name="password" class="form-control" type="password">
+                    </div>
+                    <p class="help-block">{{ERRORPASSWORD}}</p>
+                </div>
+            </div>
+
+            <!-- CONFIRM PASSWORD-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="confPasswd"></label>
+                <div class="col-md-5">
+                    <div class="input-group">
+                        <span class="input-group-addon">confirm password</span>
+                        <input id="confPasswd" name="confPasswd" class="form-control" type="password">
+                    </div>
+                    <p class="help-block">{{ERRORCONFPASSWD}}</p>
+                </div>
+            </div>
+
+            <!-- CAPTCHA-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="captcha"></label>
+                <div class="col-md-3">
+                <table><tr>
+                    <td>
+                    <div class="input-group">
+                        <span class="input-group-addon">{{CAPTCHA}}</span>
+                        <input id="captcha" name="captcha" class="form-control" type="text">
+                    </div>
+                    </td>
+            <!-- OK -->
+                    <td>
+                <!--<div class="col-md-4">-->
+                    <input id="ok" name="ok" class="btn btn-primary" value="OK" type="submit">
+                <!--</div>-->
+                    </td></tr></table></div>
+                <p class="help-block">{{ERRORCAPTCHA}}</p>
+            </div>
+
+        </fieldset>
+    </form>
+
+</div>
+
+    
+  </body>
+</html>

@@ -24,6 +24,13 @@
     width: 800px;
     height: 20px;
 }
+#registration {
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width:800px;
+}
 
 /*
 h1 {
