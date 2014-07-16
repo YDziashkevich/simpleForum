@@ -7,10 +7,16 @@ $mainPage=new Form();
 
 if(!empty($_GET) && $_GET['reg']=='ok'){
     $reg=new Registration();
-    $userEmail=$storage->getStorage("SELECT login, email FROM st_users");
-    var_dump($userEmail);
-    $validateUser=$reg->validateForm($userEmail);
-    var_dump($validateUser);
+    $user=$reg->getUserInfo();
+    $matchUser=$storage->matchUserData("SELECT login, email FROM st_users WHERE login = :login OR email = :email",$user);
+    $validateUser=$reg->validateForm($matchUser);
+    if($validateUser && $user){
+        echo $storage->putUser($user);
+        //header('Location: ./index.php');
+        //exit();
+    }
+
+
     $registrationPage=$reg->getPage();
     echo $registrationPage;
 }else{
