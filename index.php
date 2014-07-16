@@ -13,7 +13,7 @@ if(!empty($_GET) && $_GET['reg']=='ok'){
     if($validateUser && $user){
         $registration=$storage->putUser($user);
         if($registration){
-            header('Location: '.$_SERVER['REQUEST_URI']);
+            header('Location: /simpleForum/index.php');
             exit();
         }
     }
@@ -22,8 +22,8 @@ if(!empty($_GET) && $_GET['reg']=='ok'){
     $registrationPage=$reg->getPage();
     echo $registrationPage;
 }else{
+    var_dump($mainPage->getDataUser());
 
     echo $mainPage->getMainPaige();
 }
 
-//$themes=$storage->getStorage("SELECT * FROM st_themes");

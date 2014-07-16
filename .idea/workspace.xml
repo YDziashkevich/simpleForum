@@ -26,9 +26,9 @@
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="47" selection-start="471" selection-end="471" vertical-scroll-proportion="0.38977072" vertical-offset="0" max-vertical-offset="578">
+            <state line="24" column="38" selection-start="705" selection-end="705" vertical-scroll-proportion="0.7195767" vertical-offset="0" max-vertical-offset="595">
               <folding>
-                <marker date="1405544658331" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
+                <marker date="1405548144730" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
               </folding>
             </state>
           </provider>
@@ -66,7 +66,7 @@
       <file leaf-file-name="Form.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="36" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1785">
+            <state line="24" column="34" selection-start="575" selection-end="575" vertical-scroll-proportion="-14.615385" vertical-offset="28" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -84,7 +84,7 @@
       <file leaf-file-name="Registration.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Registration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="22" selection-start="1001" selection-end="1001" vertical-scroll-proportion="13.153846" vertical-offset="1056" max-vertical-offset="2312">
+            <state line="42" column="22" selection-start="1001" selection-end="1001" vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="2312">
               <folding />
             </state>
           </provider>
@@ -112,13 +112,13 @@
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/classes/storage.php" />
         <option value="$PROJECT_DIR$/classes/Paginator.php" />
-        <option value="$PROJECT_DIR$/classes/Form.php" />
         <option value="$PROJECT_DIR$/tpl/mainPage.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/tpl/registration.html" />
         <option value="$PROJECT_DIR$/classes/Registration.php" />
         <option value="$PROJECT_DIR$/inc/inc.php" />
         <option value="$PROJECT_DIR$/classes/Storage.php" />
+        <option value="$PROJECT_DIR$/classes/Form.php" />
         <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
@@ -284,8 +284,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -348,7 +348,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="38" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="544">
           <folding>
-            <marker date="1405544658331" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
+            <marker date="1405548144730" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
           </folding>
         </state>
       </provider>
@@ -408,7 +408,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="54" selection-start="699" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="544">
           <folding>
-            <marker date="1405544658331" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
+            <marker date="1405548144730" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
           </folding>
         </state>
       </provider>
@@ -468,7 +468,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="28" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
           <folding>
-            <marker date="1405544658331" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
+            <marker date="1405548144730" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
           </folding>
         </state>
       </provider>
@@ -538,7 +538,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="31" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <folding>
-            <marker date="1405544658331" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
+            <marker date="1405548144730" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
           </folding>
         </state>
       </provider>
@@ -594,7 +594,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <folding>
-            <marker date="1405544658331" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
+            <marker date="1405548144730" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
           </folding>
         </state>
       </provider>
@@ -619,13 +619,6 @@
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2620" column="22" selection-start="48019" selection-end="48024" vertical-scroll-proportion="0.0" vertical-offset="44347" max-vertical-offset="106216" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="36" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1785">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/mainPage.html">
@@ -661,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Registration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="22" selection-start="1001" selection-end="1001" vertical-scroll-proportion="13.153846" vertical-offset="1056" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/Storage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="42" selection-start="1359" selection-end="1359" vertical-scroll-proportion="-16.961538" vertical-offset="256" max-vertical-offset="918">
@@ -677,11 +663,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="22" selection-start="1001" selection-end="1001" vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="2312">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="34" selection-start="575" selection-end="575" vertical-scroll-proportion="-14.615385" vertical-offset="28" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="47" selection-start="471" selection-end="471" vertical-scroll-proportion="0.38977072" vertical-offset="0" max-vertical-offset="578">
+        <state line="24" column="38" selection-start="705" selection-end="705" vertical-scroll-proportion="0.7195767" vertical-offset="0" max-vertical-offset="595">
           <folding>
-            <marker date="1405544658331" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
+            <marker date="1405548144730" expanded="true" signature="260:332" placeholder="SELECT login..st_users..." />
           </folding>
         </state>
       </provider>
