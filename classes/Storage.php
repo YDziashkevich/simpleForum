@@ -3,7 +3,7 @@
 class Storage{
     private $db;
 
-    public function __construct($host="localhost", $dbName="forum_st", $user="root", $password=" "){
+    public function __construct($host="localhost", $dbName="forum_st", $user="root", $password=""){
         try{
             $this->db = new PDO("mysql: host=$host; dbname=$dbName", $user, $password);
             $this->db->exec("set names utf8");
@@ -15,11 +15,11 @@ class Storage{
     public function __destruct(){
         $this->db=null;
     }
+
     public function getStorage($query){
         $this->db->query("SET CHARACTER SET utf8");
         $queryDb=$this->db->query($query);
-        $queryDb->db->setFetchMode(PDO::FETCH_ASSOC);
-        $rezultQuery = $queryDb->fetchAll();
+        $rezultQuery = $queryDb->fetchAll(PDO::FETCH_ASSOC);
         return $rezultQuery;
     }
 }

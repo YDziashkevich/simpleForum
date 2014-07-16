@@ -5,6 +5,7 @@ class Registration {
     private $userInfo;
     private $errors=array();
     private $valueForm=array();
+
     private $captcha;
     private $dataForm=array();
 
@@ -67,17 +68,43 @@ class Registration {
         return $this->userInfo;
     }
 
-    public function validateForm(){
+    public function validateForm($userEmail=array()){
         isset($_POST["login"])?$this->dataForm["login"]=$_POST["login"]:" ";
         isset($_POST["email"])?$this->dataForm["email"]=$_POST["email"]:" ";
         isset($_POST["password"])?$this->dataForm["password"]=$_POST["password"]:" ";
         isset($_POST["confPasswd"])?$this->dataForm["confPasswd"]=$_POST["confPasswd"]:" ";
         isset($_POST["captcha"])?$this->dataForm["captcha"]=$_POST["captcha"]:" ";
+        $flagLogin=true;
+        $flagEmail=true;
+        /**
+         * проверка на наличие в базе login и email
+         */
+        if(isset($_POST) && !empty($_POST)){
+            foreach($userEmail as $value){
+                foreach($value as $key=>$data){
+                    if($key=='login' && $this->dataForm["login"]==$data){
+                        $flagLogin=false;
+                        echo $flagLogin;
+                    }
+                    if($key=='email' && $this->dataForm["email"]==$data){
+                        $flagEmail=false;
+                        echo $flagEmail;
+                    }
+                }
+            }
+        }
+        /**
+         * проверка на соотвествие введеных данных
+         */
         $validation = true;
         if(isset($_POST) && !empty($_POST)){
             if(strlen($this->dataForm["login"])<3 ){
                 $validation = false;
                 $this->errors['login'] = "Имя пользователя должно содержать не менее 3 символов";
+                $_POST['login']=" ";
+            }elseif(!$flagLogin){
+                $validation = false;
+                $this->errors['login'] = "Пользователь с таким именем уже существует";
                 $_POST['login']=" ";
             }else{
                 $this->errors['login'] = " ";
@@ -86,7 +113,12 @@ class Registration {
                 $validation = false;
                 $this->errors['email'] = "Неправильно введен email. Должен быть вида example@mail.com";
                 $_POST['email']=" ";
-            }else{
+            }elseif(!$flagEmail){
+                $validation = false;
+                $this->errors['email'] = "Пользователь с таким email уже существует";
+                $_POST['email']=" ";
+            }
+            else{
                 $this->errors['email'] = " ";
             }
             if(strlen($this->dataForm["password"])<6 && strlen($this->dataForm["password"])>16){
