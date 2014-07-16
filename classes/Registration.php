@@ -61,7 +61,7 @@ class Registration {
 
     /**
      * получение данных пользователя
-     * @return array массив с логином и емайлом
+     * @return array массив с логином, паролем и емайлом
      */
     public function getUserInfo(){
         isset($_POST["login"])?$this->dataForm["login"]=$_POST["login"]:"";

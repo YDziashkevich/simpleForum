@@ -27,8 +27,7 @@ class Storage{
     }
 
     public function putUser($user=array()){
-        //$data = array( 'login' => $user["login"], 'email' => $user["email"], 'password' => $user["password"]);
-        $putUser = $this->db->prepare("INSERT INTO st_userMessage (login, email, password) value (:login, :email, :password)");
+        $putUser = $this->db->prepare("INSERT INTO st_users (login, email, password) value (:login, :email, :password)");
         $putUser->bindParam(':login', $user["login"]);
         $putUser->bindParam(':email', $user["email"]);
         $putUser->bindParam(':password', $user["password"]);
