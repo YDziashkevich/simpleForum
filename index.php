@@ -22,8 +22,10 @@ if(!empty($_GET) && $_GET['reg']=='ok'){
     $registrationPage=$reg->getPage();
     echo $registrationPage;
 }else{
-    var_dump($mainPage->getDataUser());
-
+    if(!empty($_POST) && isset($_POST)){
+        if($mainPage->getDataUser()){
+            var_dump($storage->validateUser());
+        }
+    }
     echo $mainPage->getMainPaige();
 }
-

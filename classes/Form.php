@@ -18,14 +18,16 @@ class Form {
 
 
     public function getDataUser(){
-        if(isset($_POST["login"])){
-            $_SESSION["login"]=$_POST["login"];}
-        if(isset($_POST["email"])){
-            $_SESSION["password"]=$_POST["password"];}
-        return $_SESSION["login"];
+        if(isset($_POST["login"]) && isset($_POST["password"]) && !empty($_POST)){
+            $_SESSION["login"]=$_POST["login"];
+            $_SESSION["password"]=$_POST["password"];
+        }
+        if(isset($_SESSION["login"]) && isset($_SESSION["password"])){
+            return true;
+        }else{
+            return false;
+        }
     }
 
 
-
-
-} 
+}
