@@ -35,18 +35,20 @@ class Storage{
 
     }
 
+    //валидация параметров при входе пользователя
     public function validateUser(){
         if(isset($_SESSION["login"]) && isset($_SESSION["password"])){
             $this->db->query("SET CHARACTER SET utf8");
             $queryUser=$this->db->prepare("SELECT login, password FROM st_users WHERE login = :login AND password = :password");
             $queryUser->bindParam(':login', $_SESSION["login"]);
-            $queryUser->bindParam(':email', $_SESSION["password"]);
+            $queryUser->bindParam(':password', $_SESSION["password"]);
             $queryUser->execute();
             $dataUser = $queryUser->fetchAll(PDO::FETCH_ASSOC);
                 if(!$dataUser){
                     return false;
                 }else{
-                    return $dataUser;
+                    $_SESSION["log"]=true;
+                    return true;
                 }
         }else{
             return false;
